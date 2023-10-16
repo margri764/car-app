@@ -1,0 +1,36 @@
+<div fxLayout="row wrap" fxLayoutAlign="center start" style="height: 100%; background-color: #22272c">
+
+
+    <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex.xs="97" fxFlex.sm="95" fxFlex="87"  style="background-color: #22272c; padding: 10px;">
+
+        <div fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="100"  style="">
+
+            <form  [formGroup]="myForm"  fxLayout="row wrap" fxLayoutAlign="center center" fxFlex.xs="90" fxFlex.sm="60" fxFlex="30" style="  margin-top: 40px;  " class="needs-validation" novalidate>     
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="¿Que necesitás?" aria-label="¿Que necesitás?" aria-describedby="basic-addon1" style="background-color: #1c2024;">
+                    <span class="input-group-text " style="cursor: pointer; background-color: rgb(255, 77, 0); color: white;"  id="basic-addon1" (click)="test()">Buscar</span>
+                </div>
+        
+            </form>
+        </div>
+
+
+        <div fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="100"  style="width: 300px; color: white;">
+            <span style="font-family: archivo-black; font-size: 2em; text-align: start;" fxFlex="100" >Solo lo mejor para vos!!</span>
+            <span style="font-family: audiowide; font-size: 1.3em; text-align: start;" fxFlex="100" >TE ASESORAMOS</span>
+
+            <div style="font-family: poppins-light; font-size: 0.8em; text-align:justify; width: 360px; margin-top: 10px;"> Tenemos los mejores usados seleccionados, autos y camionetas premiun para vos  </div> 
+            
+            <div fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="100" style="margin-top: 20px; z-index: 999;">
+                <div style="border: 1px solid rgb(255, 77, 0); border-radius: 7px; padding: 10px; color: white; font-size: 0.8em; font-weight: 400; width: 150px; text-align: center; cursor: pointer;">Descubrir mas</div>
+            </div>
+        </div>
+        
+      
+
+        <div fxLayout="row wrap" fxLayoutAlign="center start" style=" position: absolute; top: 300px; width: 1000px;" >
+            <img src="assets/camaro2-bg.png" alt="" fxFlex="100">
+        </div>
+
+    </div>
+</div>

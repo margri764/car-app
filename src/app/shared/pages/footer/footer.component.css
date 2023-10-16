@@ -1,0 +1,199 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+
+.footer-container{
+    /* height: 1000px; */
+    margin-top: 10vw;
+    background-image: url("../../../../assets/footer3.png");
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* overflow: hidden; */
+}
+
+
+
+
+.mail a {
+    --animate-duration: 2s;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: all 1s 0s ease;
+}
+
+.mail a:hover{
+    color: aqua;
+}
+
+/* .address{
+    font-weight: bold;
+    color: white;
+    font-size: 2vw;
+} */
+
+.social{
+   
+    --animate-duration: 1s;
+    margin-bottom: 3vw;
+    margin-right: 1vw;
+     }
+  
+span#search{
+    color: white;
+    font-size: 2.7vw;
+    margin: 2vw;
+}
+
+
+.nav-pills{
+    box-shadow: 4px 4px 10px rgb(150, 148, 148);
+}
+
+#link{
+    color: rgb(38, 102, 221);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 2.5vw;
+    transition: all 0.6s ease 0.1s; 
+}
+
+#link:hover{
+    transform: scale(1.02);
+    color: rgb(32, 91, 201);
+}
+
+#close{
+    border-radius: 20px;    
+}
+
+span#facebook{
+font-size: 2.7vw;
+color: whitesmoke;
+margin: 1vw;
+transition: all 1s 0s ease;
+
+
+}
+
+span#facebook:hover{
+color:aliceblue;
+}
+  
+span#whatsapp {
+  margin: 1vw;
+  font-size: 3vw;
+  color:rgb(0, 151, 8);
+  transition: all 1s 0s ease;
+}
+  
+span#whatsapp:hover {
+ color:aliceblue;
+}
+
+
+
+@media only screen and (max-width: 574px)  {
+
+    .footer-container{
+        width: 100vw;
+        height: 100vh ;
+        margin-top: 10vw;
+        background-image: url("../../../../assets/footer2.png");
+        background-position:center;
+        background-size:cover;
+    }
+
+    .nav-tabs{
+        height: 9vw;
+    }
+
+    a{
+        font-size: 3vw;
+        line-height: 5vw;
+    }
+
+    b{
+        font-size: 4vw;
+    }
+
+    button{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 2.5vw;    
+    }
+    
+    span#whatsapp{
+        font-size: 9vw;
+    }
+
+    span#facebook{
+        font-size: 8vw;
+        color:rgb(194, 194, 190);
+        margin: 1vw;     
+    }
+
+    span#instagram{
+        font-size: 8vw;
+        color:rgb(194, 194, 190);
+        margin: 1vw;
+    }
+
+    span#search{
+        font-size: 8vw;
+    }
+    
+  
+    /* .address{
+        font-size: 4vw;
+    } */
+
+ 
+}
+
+@media only screen and (min-width: 575px) and (max-width: 768px  )  {
+
+}
+
+
+@media only screen and (min-width: 769px) and (max-width: 1450px)  {
+
+    a{
+        font-size: 2vw;
+    }
+
+    .footer-container{
+        height: 1000px;
+        background-position:center ;
+        background-size: cover;
+    }
+
+    span#whatsapp{
+        font-size: 3vw;
+    }
+
+
+}
+
+@media only screen and (min-width: 1450px)   {
+
+    .footer-container{
+        height: 900px;
+        background-position:center ;
+        background-size: cover;
+    }
+
+
+
+    a{
+        font-size: 1.5vw;
+    }
+
+ 
+
+
+}
+    
+

@@ -1,0 +1,108 @@
+<br><br>
+ <div class="container flex-grow-1 flex-shrink-0 py-0 animate__animated animate__fadeIn" #target >
+  <div class="mb-0 p-4 bg-white shadow-sm">
+
+
+ <div id="stepper1" class="bs-stepper" #bsStepper>
+   <div class="bs-stepper-header" role="tablist">
+     <div class="step" data-target="#test-l-1">
+       <button type="button" class="step-trigger" role="tab" id="stepper1trigger1" aria-controls="test-l-1">
+         <span class="bs-stepper-circle">1</span>
+         <span class="bs-stepper-label">Seleccioná Marca</span>
+       </button>
+     </div>
+     <div class="bs-stepper-line"></div>
+     <div class="step" data-target="#test-l-2" >
+       <button type="button" [disabled]="disabledBrand"  class="step-trigger" role="tab" id="stepper1trigger2" aria-controls="test-l-2">
+         <span class="bs-stepper-circle">2</span>
+         <span class="bs-stepper-label">Elegi tu modelo</span>
+       </button>
+     </div>
+     <div class="bs-stepper-line"></div>
+     <div class="step" data-target="#test-l-3">
+       <button type="button" [disabled]="disabledModel" class="step-trigger" role="tab" id="stepper1trigger3" aria-controls="test-l-3">
+         <span class="bs-stepper-circle">3</span>
+         <span class="bs-stepper-label">Tus datos</span>
+       </button>
+     </div>
+   </div> 
+   <!-- end header -->
+
+   <br><br>
+
+   <div class="bs-stepper-content">
+
+       <div id="test-l-1" role="tabpanel" class="bs-stepper-pane" aria-labelledby="stepper1trigger1">
+
+        <div fxLayout="row wrap" >
+        <div fxLayoutAlign="space-evenly center" fxLayout="row wrap" fxLayoutGap="40px" >
+
+          <img fxFlex="20" (click)="goToBrand('chevrolet');next()" src="../../../../assets/logo_chevrolet.png" id="chevrolet">
+          <img fxFlex="20" (click)="goToBrand('ford');next()" src="../../../../assets/logo_ford.png" id="ford" >
+          <img fxFlex="20" (click)="goToBrand('fiat');next()" src="../../../../assets/logo_fiat.png" id="fiat">
+          <img fxFlex="20" (click)="goToBrand('renault');next()" src="../../../../assets/logo_renault.png" id="renault" >
+          <img fxFlex="20" (click)="goToBrand('vw');next()" src="../../../../assets/logo_volkswagen.png" id="vw" >
+          <img fxFlex="20" (click)="goToBrand('nissan');next()" src="../../../../assets/logo_nissan.png" id="nissan" >
+          <img fxFlex="20" (click)="goToBrand('peugeot');next()" src="../../../../assets/logo_peugeot.png" id="peugeot" >
+          <img fxFlex="20" (click)="goToBrand('jeep');next()" src="../../../../assets/logo_jeep.png" id="jeep" >
+          <img fxFlex="20" (click)="goToBrand('toyota');next()" src="../../../../assets/log.png" id="toyota" >
+        
+        </div>
+        <br><br><br><br>
+      </div>
+
+          
+        
+      </div>
+       <!-- end 1 -->
+
+       <div id="test-l-2" role="tabpanel" class="bs-stepper-pane" aria-labelledby="stepper1trigger2">        
+        
+   
+       <div fxLayout="row" fxLayoutAlign="center space-evenly">
+
+          <span fxFlex="25" (click)="goToModel('car')">Autos</span>
+          <span fxFlex="25" (click)="goToModel('suv')">SUVs</span>
+          <span fxFlex="25" (click)="goToModel('pickups')">Pick Ups</span>
+          <span fxFlex="25" (click)="goToModel('sports')">Deportivos</span>
+       </div>
+  <br><br>
+    <!-- <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" (click)="toggleNavbar()">
+      Button with data-bs-target
+    </button>
+  
+  <div class="collapse" id="collapseExample"  [ngClass]="{ 'show': navbarOpen}">
+
+  </div> -->
+  <app-cars (triggerToNext)="triggerNext = $event" 
+            (triggerToPrevious)="triggerPrevious = $event"
+            (modelSelect)="carSelect = $event"
+            [brandSelection]="brandSelection"
+            [modelSelection]="modelSelection"  >
+  </app-cars>
+
+    
+      </div>   
+     
+    <!-- end 2 -->
+
+      <div id="test-l-3" role="tabpanel" class="bs-stepper-pane text-center" aria-labelledby="stepper1trigger3">
+       
+        <app-form  [modelSelection]="carSelect" ></app-form>
+
+        <button class="btn btn-primary mt-0" (click)="previous()">Previous</button>
+        
+    </div>    
+    <!-- end 3 -->
+
+  </div>
+          
+    </div>
+ 
+   </div>
+  </div>
+
+
+        
+    
+

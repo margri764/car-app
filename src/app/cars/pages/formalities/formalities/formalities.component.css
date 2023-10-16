@@ -1,0 +1,61 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+h1{
+    font-family: 'poppins';
+}
+hr {
+    height: 6px;
+    background-color: rgb(75, 248, 32);
+    width: 50%;
+  }
+
+span{
+    font-size: 10vw;
+    color: rgb(38, 102, 221);
+    transition: all 1s 0s ease;
+}
+
+label{
+    font-size: 1.6vw;
+    font-family: 'poppins', 'sans-serif';
+    color: rgb(63, 62, 62);
+}
+
+/* .containIcon{
+    overflow: hidden;   
+} */
+
+.containIcon:hover span{
+    -webkit-transform:scale(1.15);
+    transform:scale(1.15);
+    cursor: pointer;
+}
+
+
+
+
+@media only screen and (max-width: 574px  )  {
+
+    label{
+        font-size: 6vw;
+    }
+
+    span{
+        font-size: 65vw;
+    }
+
+}
+
+@media only screen and (min-width: 575px) and (max-width: 768px  )  {
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1280px  )  {
+
+}
+
+@media only screen and (min-width: 1281px)   {
+
+}

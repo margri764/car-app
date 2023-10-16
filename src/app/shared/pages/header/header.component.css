@@ -1,0 +1,89 @@
+
+.whiteFrame{
+  box-shadow: 10px 10px 5px -9px rgba(191,191,191,0.75);
+  -webkit-box-shadow: 10px 10px 5px -9px rgba(191,191,191,0.75);
+  -moz-box-shadow: 10px 10px 5px -9px rgba(191,191,191,0.75);
+}
+
+.nav-link{
+    color: rgb(255, 255, 255) !important;
+} 
+
+
+.fa-whatsapp{
+    font-size: 25px;
+    color: rgb(41, 167, 125);
+    transition: all 0.3s ease 0s;
+  }
+  
+  .fa-whatsapp:hover{   
+    color: rgb(199, 199, 199);
+    transform:scale(1.2);
+    cursor: pointer;
+  }
+  
+
+  
+  .fa-instagram{
+    font-size: 25px;
+    color: rgb(41, 167, 125);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    }
+  
+  .fa-instagram:hover{
+    color: rgb(199, 199, 199);
+    transform:scale(1.2);
+    cursor: pointer;
+  }
+  
+  .fa-facebook-f{
+    font-size: 20px;
+    color: rgb(41, 167, 125);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .fa-facebook-f:hover{
+    color: rgb(199, 199, 199);
+    transform:scale(1.2);
+    cursor: pointer;
+  }
+  
+  .fa-envelope{
+    font-size: 20px;
+    color: rgb(41, 167, 125);
+    transition: all 0.3s ease 0s;
+  }
+  
+  .fa-envelope:hover{
+    color: rgb(199, 199, 199);
+    transform:scale(1.2);
+    cursor: pointer;
+  }
+  
+  
+
+
+@media only screen and (max-width: 574px  )  {
+
+ 
+}
+
+@media only screen and (min-width: 800px  )  {
+
+
+}
+
+@media only screen and (min-width: 1200px)  {
+
+ 
+
+
+}
+
+@media only screen and (min-width: 1400px)   {
+
+}
+    
+

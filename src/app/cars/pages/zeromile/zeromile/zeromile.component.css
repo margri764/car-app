@@ -1,0 +1,86 @@
+
+ .animate__animated.animate__fadeIn {
+    --animate-duration: 3s;
+  }
+
+img{
+    cursor: pointer;
+}
+
+span{
+    cursor: pointer;
+}
+
+span:hover{
+    color: blue;
+    font-weight: bold;
+}
+
+#chevrolet:hover{
+    transform: scale(1.1);
+}
+
+#ford{
+    /* transform: scale(); */
+}
+
+#fiat{
+    transform: scale(1.2);
+}
+
+#renault{
+    transform: scale(0.9);
+}
+
+#nissan{
+    transform: scale(0.9);
+}
+
+#vw{
+    transform: scale(1.3);
+
+}
+#next{
+    font-size: 2vw;
+    font-family: 'poppins';
+    border: 1.5px solid black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+#next:hover{
+    border: 1.5px solid blue;
+
+    /* transform: scale(1.05); */
+    /* transform: translate(7px) */
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 574px  )  {
+
+ 
+}
+
+@media only screen and (min-width: 575px) and (max-width: 768px  )  {
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1280px  )  {
+
+
+
+}
+
+@media only screen and (min-width: 1281px)   {
+
+  }
+    
