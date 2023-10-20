@@ -10,80 +10,103 @@
 } 
 
 
+
 .fa-whatsapp{
     font-size: 25px;
     color: rgb(41, 167, 125);
     transition: all 0.3s ease 0s;
-  }
+}
   
-  .fa-whatsapp:hover{   
+.fa-whatsapp:hover{   
     color: rgb(199, 199, 199);
     transform:scale(1.2);
     cursor: pointer;
-  }
+}
   
-
-  
-  .fa-instagram{
+.fa-instagram{
     font-size: 25px;
     color: rgb(41, 167, 125);
     cursor: pointer;
     transition: all 0.3s ease 0s;
-    }
+}
   
-  .fa-instagram:hover{
+.fa-instagram:hover{
     color: rgb(199, 199, 199);
     transform:scale(1.2);
     cursor: pointer;
-  }
+}
   
-  .fa-facebook-f{
+.fa-facebook-f{
     font-size: 20px;
     color: rgb(41, 167, 125);
     cursor: pointer;
     transition: all 0.3s ease 0s;
-  }
+}
   
-  .fa-facebook-f:hover{
+.fa-facebook-f:hover{
     color: rgb(199, 199, 199);
     transform:scale(1.2);
     cursor: pointer;
-  }
+}
   
-  .fa-envelope{
+.fa-envelope{
     font-size: 20px;
     color: rgb(41, 167, 125);
     transition: all 0.3s ease 0s;
-  }
+}
   
-  .fa-envelope:hover{
+.fa-envelope:hover{
     color: rgb(199, 199, 199);
     transform:scale(1.2);
     cursor: pointer;
-  }
+}
   
-  
+.width-navbar{
+  width: 90%;
+}
 
 
 @media only screen and (max-width: 574px  )  {
+
+  .width-navbar{
+    width: 100%;
+  }
 
  
 }
 
 @media only screen and (min-width: 800px  )  {
 
-
+  .width-navbar{
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 1200px)  {
 
- 
-
+  .width-navbar{
+    width: 90%;
+  }
 
 }
 
 @media only screen and (min-width: 1400px)   {
 
+  .width-navbar{
+    width: 90%;
+  }
 }
+
+
+@media only screen and (min-width: 1600px)   {
+
+  .width-navbar{
+    width: 85%;
+  }
+}
+
+
+
+
     
 

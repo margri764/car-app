@@ -21,18 +21,21 @@
 <div class="mail animate__animated animate__backInUp" style="margin-right: 10px; "> <a href="mailto:margri764@gmail.com">barrozoautomotores@gmail.com</a>
 </div> -->
 
-<div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex.xs="97" fxFlex.sm="95" fxFlex="100"  style="background-color: #22272c">
+<div fxLayout="row wrap" fxLayoutAlign="center center"  fxFlex="100"  style="background-color: #22272c">
 
 
 
-  <nav class="navbar navbar-expand-lg font whiteFrame" style="width: 87%;"   >
+  <nav class="navbar navbar-expand-lg width-navbar" >
     <div class="container-fluid justify-content-between" >
       <a class="navbar-brand" >
         <img src="assets/agency-logo4-bg.png" [width]="width">
       </a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  
+
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
+        <!-- <span class="navbar-toggler-icon text-white" style="color: red !important;"></span> -->
+        <span class="navbar-toggler-icon material-icons" style="color: white"> menu </span>  
       </button>
 
   <div   [ngStyle]="!phone ? {'visibility': 'hidden'} : {'display':'none'}">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dignissimos, rem incidunt vitae iste expedita iusto sint aliquam cumque, sapiente error distinctio eaque quis voluptates fugit pariatur minus, necessitatibus odio.</div>    
@@ -99,15 +102,16 @@
   <div class="offcanvas offcanvas-end font" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background-color: rgb(248, 252, 252);">
     <div class="offcanvas-header">
       <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel"> <b>Contactos</b> </h5> -->
-      <!-- <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
       <img src="assets/agency-logo4.png" style="width: 100%; margin-top: 20px;">
     </div>
     <div class="offcanvas-body">
         
 
-      <div fxLayout="row wrap" fxLayoutAlign="start center" style="margin-top: 10px; border: 1px solid rgba(230, 230, 230, 0.75); border-radius: 7px; padding: 7px; background-color: white;" class="whiteFrame" >
+      <div fxLayout="row wrap" fxLayoutAlign="start center" style="margin-top: 30px; border: 1px solid rgba(230, 230, 230, 0.75); border-radius: 7px; padding: 7px; background-color: white;" class="whiteFrame" >
+
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close" style="position: absolute; top: 230px; right: 20px;"></button>
         
-        <p style="margin-top: 10px;">Luciano G. Barrozo <br> 
+        <p style="margin-top: 10px;"><b>Luciano G. Barrozo </b>  
 
           <div fxLayout="row wrap" fxLayoutAlign="start center" style="margin-top: 10px;" >
             
@@ -119,17 +123,17 @@
 
           <div fxLayout="row wrap" fxLayoutAlign="start center" style="margin-top: 20px;">
             <span style="width: 100%; text-align: start; color: rgb(41, 167, 125);">Correos electronicos</span>
-            <span class="material-icons" style="margin-top: 12px; margin-left: 18px;"> email </span>  
+            <span class="material-icons" style="margin-top: 12px; margin-left: 18px; color: rgb(41, 167, 125)"> email </span>  
             <span style="margin-left: 10px; margin-top: 12px"> barrozoautomotores@gmail.com </span>
           </div>
 
           <div fxLayout="row wrap" fxLayoutAlign="start center" style="margin-top: 5px;">
-            <span class="material-icons" style="margin-left: 18px;"> email </span>  
+            <span class="material-icons" style="margin-left: 18px; color: rgb(41, 167, 125)"> email </span>  
             <span style="margin-left: 10px; margin-top: 12px"> lucianobarrozo979@gmail.com</span>
           </div>
 
           <div fxLayout="row wrap" fxLayoutAlign="start center" style="margin-top: 5px;">
-            <span class="material-icons" style="margin-left: 18px;"> email </span>  
+            <span class="material-icons" style="margin-left: 18px; color: rgb(41, 167, 125)"> email </span>  
             <span style="margin-left: 10px; margin-top: 12px"> lucianobarrozo@hotmail.com</span>
           </div>
 

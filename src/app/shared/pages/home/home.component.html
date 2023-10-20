@@ -1,7 +1,7 @@
-<div fxLayout="row wrap" fxLayoutAlign="center start" style="height: 100%; background-color: #22272c">
+<div fxLayout="row wrap" fxLayoutAlign="center start" style="height: 100%; background-color: #22272c; " class="wave">
 
 
-    <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex.xs="97" fxFlex.sm="95" fxFlex="87"  style="background-color: #22272c; padding: 10px;">
+    <div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex.xs="97" fxFlex.sm="95" fxFlex="87"  style=" padding: 10px;">
 
         <div fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="100"  style="">
 
@@ -16,8 +16,8 @@
 
 
         <div fxLayout="row wrap" fxLayoutAlign="start center" fxFlex="100"  style="width: 300px; color: white;">
-            <span style="font-family: archivo-black; font-size: 2em; text-align: start;" fxFlex="100" >Solo lo mejor para vos!!</span>
-            <span style="font-family: audiowide; font-size: 1.3em; text-align: start;" fxFlex="100" >TE ASESORAMOS</span>
+            <span style="font-family: archivo-black; font-size: 1.8em; text-align: start;" fxFlex="100" >Bienvenidos a BARROZO AUTOMOTORES, </span>
+            <span style="font-family: audiowide; font-size: 1.3em; text-align: start;" fxFlex="100" > donde tu satisfacción es nuestra prioridad!</span>
 
             <div style="font-family: poppins-light; font-size: 0.8em; text-align:justify; width: 360px; margin-top: 10px;"> Tenemos los mejores usados seleccionados, autos y camionetas premiun para vos  </div> 
             
@@ -28,8 +28,12 @@
         
       
 
-        <div fxLayout="row wrap" fxLayoutAlign="center start" style=" position: absolute; top: 300px; width: 1000px;" >
-            <img src="assets/camaro2-bg.png" alt="" fxFlex="100">
+        <div fxLayout="row wrap" fxLayoutAlign="center start" style="position: absolute; top: 250px; left: 200px; width: 100%;" *ngIf="!phone" >
+            <img src="assets/camaro2-bg.png" alt="" class="car-img" [width]="width">
+        </div>
+
+        <div fxLayout="row wrap" fxLayoutAlign="center start" fxFlex="100" *ngIf="phone" >
+            <img src="assets/camaro2-bg.png" alt="" fxFlex="110">
         </div>
 
     </div>
