@@ -21,6 +21,7 @@ import { Page404Component } from './shared/pages/page404/page404.component';
 import { StartComponent } from './shared/pages/start/start/start.component';
 import { IvyCarouselModule } from 'angular-responsive-carousel2';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MaintenanceComponent } from './shared/messages/maintenance/maintenance/maintenance.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     SlideUpComponent,
     Page404Component,
     LoginComponent,
-    StartComponent
+    StartComponent,
+    MaintenanceComponent
   ],
   imports: [
     BrowserModule,

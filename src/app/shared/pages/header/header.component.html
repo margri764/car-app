@@ -1,40 +1,14 @@
 
 
+<div fxLayout="row wrap" fxLayoutAlign="center center" fxFlex="100" style="background-color: #22272c">
 
-  <!-- <img src="assets/agency-logo4.png" alt="" fxFlex="10"> -->
- 
-<!-- <div class="social animate__animated animate__backInLeft " style="margin-left: 10px;" fxLayoutAlign="center end" fxLayoutGap.xs="10px">
-    <a  target="_blank" title="whatsapp" href="https://wa.me/+542302416035?text=Hola!!%20" > 
-        <span id="whatsapp"><i class="fab fa-whatsapp"></i></span>
-    </a>
-
-    <a target="_blank" title="Facebook" href="https://www.facebook.com/Dulce-Alma-Deco-355907414565508" >
-        <span id="facebook"><i class="fab fa-facebook"></i></span>
-    </a>
-
-    <a >
-    <span class="text-center" id="search"> <i class="fas fa-search-location"></i> </span>
-  </a>
-  
-</div>  
-
-<div class="mail animate__animated animate__backInUp" style="margin-right: 10px; "> <a href="mailto:margri764@gmail.com">barrozoautomotores@gmail.com</a>
-</div> -->
-
-<div fxLayout="row wrap" fxLayoutAlign="center center"  fxFlex="100"  style="background-color: #22272c">
-
-
-
-  <nav class="navbar navbar-expand-lg width-navbar" >
+  <nav class="navbar navbar-expand-lg width-navbar"  >
     <div class="container-fluid justify-content-between" >
       <a class="navbar-brand" >
         <img src="assets/agency-logo4-bg.png" [width]="width">
       </a>
 
-  
-
       <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
-        <!-- <span class="navbar-toggler-icon text-white" style="color: red !important;"></span> -->
         <span class="navbar-toggler-icon material-icons" style="color: white"> menu </span>  
       </button>
 
@@ -76,29 +50,15 @@
           <a class="nav-link active" aria-current="page" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" style="cursor: pointer;">Contacto</a>
         </li>
 
-        <!-- <li class="nav-item" [ngStyle]="!phone ? {'margin-right': '20px'} : {}" routerLink="/inscriptos" *ngIf="inscription" style="cursor: pointer;">
-          <a class="nav-link active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Inscriptos</a>
-        </li> -->
-
-        <!-- <li class="nav-item" [ngStyle]="!phone ? {'margin-right': '20px'} : {}" routerLink="/login" style="cursor: pointer;" *ngIf="!inscription">
-          <a class="nav-link active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Login</a>
-        </li> -->
-
-        <!-- <li class="nav-item" [ngStyle]="!phone ? {'margin-right': '20px'} : {}" *ngIf="inscription" style="cursor: pointer;" (click)="logout()">
-          <a class="nav-link active" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Logout</a>
-        </li> -->
-
         
       </ul>
     </div>
   </div>
   </nav>
 
-
 </div>
 
   <!-- start offcanvas -->
- 
   <div class="offcanvas offcanvas-end font" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background-color: rgb(248, 252, 252);">
     <div class="offcanvas-header">
       <!-- <h5 class="offcanvas-title" id="offcanvasExampleLabel"> <b>Contactos</b> </h5> -->
@@ -177,82 +137,5 @@
 
     </div>
   </div>
-
   <!-- end offcanvas -->
   
-
-<!-- <div>
-      <ul ngbNav #nav="ngbNav" class="nav-pills" [(activeId)]="active" >
-
-        <li ngbNavItem >
-          <a  ngbNavLink (click)="showNavContent()" #ngbNavLink >Autos 0km</a>
-
-          <ng-template ngbNavContent >
-        
-             <button class="btn" id="link" (click)="clicked = false;" placement="bottom" ngbTooltip="Dejanos un msj" routerLink="./cars/zeromile"> Solicitá una cotización</button>
-             <button class="btn btn-danger" id="close" (click)="clicked = false; goTo()" >X</button>
-        
-          </ng-template>
-     
-        </li>
-        <li ngbNavItem >
-          <a ngbNavLink  (click)="showNavContent()">Usados Seleccionados</a>
-
-          <ng-template ngbNavContent >
-            <button class="btn" id="link" routerLink="./cars/used-car" (click)="clicked = false;" > Usados destacados</button>
-            
-          </ng-template>
-
-        </li>
-
-        <li ngbNavItem>
-          <a ngbNavLink (click)="showNavContent()">Servicios</a>
-          <ng-template ngbNavContent >
-            
-            <button class="btn" id="link" routerLink="./cars/car-wash"> Lavadero</button>
-            
-            &nbsp;&nbsp;&nbsp;
-
-            <button class="btn" id="link" routerLink="./cars/workshop"> Taller</button>
-            
-            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-            
-            <button class="btn btn-danger" (click)="clicked = false" >X</button>
-
-       
-            
-          </ng-template>
-         
-        </li>
- 
-        <li ngbNavItem>
-          <a ngbNavLink (click)="showNavContent()">Tienda</a>
-          
-          <ng-template ngbNavContent >
-            <button class="btn" id="link" routerLink="./cars/shop"> Tienda</button>
-            
-
-          </ng-template>
-        </li>
-
-         
-        <li ngbNavItem>
-          <a ngbNavLink (click)="showNavContent()">Gestoria</a>
-          
-          <ng-template ngbNavContent  >
-                <button class="btn" id="link" routerLink="./cars/formalities">Servicios de Gestoria</button>
-                <button class="btn btn-danger" (click)="clicked = false" >X</button>
-          </ng-template>
-        </li>
-
-        <li ngbNavItem>
-          <a ngbNavLink (click)="showNavContent()" routerLink="contact-us"> Contacto </a>
-         </li>
-
-
-
-
-    </ul>
-      <div class="animate__animated animate__fadeIn" [ngbNavOutlet]="nav" *ngIf="clicked"></div>
-        
-    </div> -->
